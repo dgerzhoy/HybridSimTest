@@ -1,9 +1,9 @@
-# NVDIMMTest build system
+# HybridSim build system
 
 ###################################################
 
-CXXFLAGS=-m64 -DNO_STORAGE -g -Wall -DDEBUG_BUILD
-OPTFLAGS=-m64 -O0
+CXXFLAGS=-m64 -DNO_STORAGE -Wall -DDEBUG_BUILD
+OPTFLAGS=-m64 -O3
 
 
 ifdef DEBUG
@@ -13,12 +13,16 @@ endif
 endif
 CXXFLAGS+=$(OPTFLAGS)
 
+
+DRAM_LIB=../DRAMSim2
+NV_LIB=../NVDIMMSim/src
 HS_LIB=../HybridSim
 
-INCLUDES=-I$(HS_LIB)
-LIBS=-L${HS_LIB} -lnvdsim -Wl,-rpath=${HS_LIB}
+INCLUDES=-I$(DRAM_LIB) -I$(NV_LIB) -I$(HS_LIB)
+LIBS=-L${DRAM_LIB} -L${NV_LIB} -L${HS_LIB} -ldramsim -lnvdsim -lhybridsim -Wl,-rpath=${DRAM_LIB} -Wl,-rpath=${NV_LIB} -Wl,-rpath=${HS_LIB}
 
-EXE_NAME=NVDTest #Changes need to be made here-DANIEL
+EXE_NAME=HybridSimTest
+LIB_NAME=libhybridsim.so
 
 SRC = $(wildcard *.cpp)
 OBJ = $(addsuffix .o, $(basename $(SRC)))
@@ -26,6 +30,8 @@ POBJ = $(addsuffix .po, $(basename $(SRC)))
 REBUILDABLES=$(OBJ) ${POBJ} $(EXE_NAME) $(LIB_NAME)
 
 all: ${EXE_NAME} 
+
+lib: ${LIB_NAME} 
 
 #   $@ target name, $^ target deps, $< matched pattern
 $(EXE_NAME): $(OBJ)

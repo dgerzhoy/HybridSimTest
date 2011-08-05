@@ -1,14 +1,12 @@
-#ifndef SOMETHING_H
-#define SOMETHING_H
-
 #include <iostream>
 #include <time.h>
 
 #include <HybridSystem.h>
+#include "Miss_Rate.h"
 
 enum TestType{
-    SIMPLE_TEST	
-
+    SIMPLE_TEST,	
+    PRE_SET_MISS
 
 };
 
@@ -19,5 +17,3 @@ class tester{
 		void run_test(TestType);
 
 };
-
-#endif

@@ -1,0 +1,44 @@
+ =======================================================
+ ============== Printing Statistics [id:0]==============
+   Total Return Transactions : 19318 (1236352 bytes) aggregate average bandwidth 7.676GB/s
+      -Rank   0 : 
+        -Reads  : 0 (0 bytes)
+        -Writes : 19318 (1236352 bytes)
+        -Bandwidth / Latency  (Bank 0): 1.413 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 1): 0.533 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 2): 1.117 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 3): 0.791 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 4): 1.388 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 5): 0.512 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 6): 1.132 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 7): 0.790 GB/s		-nan ns
+ == Power Data for Rank        0
+   Average Power (watts)     : 3.005
+     -Background (watts)     : 0.686
+     -Act/Pre    (watts)     : 0.823
+     -Burst      (watts)     : 1.465
+     -Refresh    (watts)     : 0.030
+
+ == Pending Transactions : 0 (100000)==
+ =======================================================
+ ============== Printing Statistics [id:0]==============
+   Total Return Transactions : 21606 (1382784 bytes) aggregate average bandwidth 8.585GB/s
+      -Rank   0 : 
+        -Reads  : 0 (0 bytes)
+        -Writes : 21606 (1382784 bytes)
+        -Bandwidth / Latency  (Bank 0): 0.942 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 1): 1.099 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 2): 0.989 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 3): 1.266 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 4): 0.937 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 5): 1.095 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 6): 1.001 GB/s		-nan ns
+        -Bandwidth / Latency  (Bank 7): 1.258 GB/s		-nan ns
+ == Power Data for Rank        0
+   Average Power (watts)     : 3.324
+     -Background (watts)     : 0.744
+     -Act/Pre    (watts)     : 0.911
+     -Burst      (watts)     : 1.639
+     -Refresh    (watts)     : 0.030
+
+ == Pending Transactions : 0 (200000)==
