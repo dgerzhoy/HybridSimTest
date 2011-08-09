@@ -51,6 +51,11 @@ void tester::run_test(TestType test) {
 		Miss_Rate *temp_test = new Miss_Rate();
 		cycle = temp_test->Pre_Set_Miss(mem);
 	}
+	if(test == FORCED_WRITE_RAND)
+	{
+		Force_Writeback *temp_test = new Force_Writeback();
+		cycle = temp_test->Forced_Rand_Writeback(mem);
+	}
 
 	end= clock();
 

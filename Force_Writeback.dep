@@ -1,5 +1,5 @@
-HybridSimTest.o: HybridSimTest.cpp HybridSimTest.h \
- /usr/include/c++/4.4/iostream \
+Force_Writeback.o: Force_Writeback.cpp Force_Writeback.h \
+ ../HybridSim/HybridSystem.h /usr/include/c++/4.4/iostream \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/c++config.h \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/bits/predefs.h \
@@ -88,8 +88,8 @@ HybridSimTest.o: HybridSimTest.cpp HybridSimTest.h \
  /usr/include/c++/4.4/bits/locale_facets.tcc \
  /usr/include/c++/4.4/bits/basic_ios.tcc \
  /usr/include/c++/4.4/bits/ostream.tcc /usr/include/c++/4.4/istream \
- /usr/include/c++/4.4/bits/istream.tcc ../HybridSim/HybridSystem.h \
- /usr/include/c++/4.4/fstream /usr/include/c++/4.4/bits/codecvt.h \
+ /usr/include/c++/4.4/bits/istream.tcc /usr/include/c++/4.4/fstream \
+ /usr/include/c++/4.4/bits/codecvt.h \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/basic_file.h \
  /usr/include/c++/4.4/x86_64-linux-gnu/bits/c++io.h \
  /usr/include/c++/4.4/bits/fstream.tcc ../HybridSim/config.h \
@@ -138,4 +138,4 @@ HybridSimTest.o: HybridSimTest.cpp HybridSimTest.h \
  ../NVDIMMSim/src/GCLogger.h ../NVDIMMSim/src/Callbacks.h \
  ../NVDIMMSim/src/PCMLogger.h ../NVDIMMSim/src/PCMGCLogger.h \
  ../HybridSim/util.h ../HybridSim/CallbackHybrid.h ../HybridSim/Logger.h \
- ../HybridSim/IniReader.h Miss_Rate.h Force_Writeback.h
+ ../HybridSim/IniReader.h
